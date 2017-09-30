@@ -1,0 +1,4 @@
+* linguist-vendored
+* linguist-language=CSS
+*.js linguist-language=CSS
+*.cr linguist-vendored=false
