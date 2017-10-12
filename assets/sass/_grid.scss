@@ -22,6 +22,21 @@
   min-height: 1px;
   display: inline-block;
 }
+@media #{$breakpoint-xs} {
+  .container {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+
+    .col-xs-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
+    }
+  }
+}
 @media #{$breakpoint-small} {
   .container {
     width: 95%;
@@ -30,6 +45,10 @@
   @for $i from 1 through $grid-columns {
     .col-sm-#{$i} {
       width: 100% / $grid-columns * $i;
+    }
+
+    .col-sm-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
     }
   }
 }
@@ -42,6 +61,10 @@
     .col-md-#{$i} {
       width: 100% / $grid-columns * $i;
     }
+
+    .col-md-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
+    }
   }
 }
 @media #{$breakpoint-large} {
@@ -53,6 +76,10 @@
     .col-lg-#{$i} {
       width: 100% / $grid-columns * $i;
     }
+
+    .col-lg-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
+    }
   }
 }
 @media #{$breakpoint-xl} {
@@ -63,6 +90,10 @@
   @for $i from 1 through $grid-columns {
     .col-xl-#{$i} {
       width: 100% / $grid-columns * $i;
+    }
+
+    .col-xl-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
     }
   }
 }

@@ -1,11 +1,8 @@
 {
-  "name": "Jannia UI",
+  "name": "jannia-ui",
   "version": "1.0.0",
-  "description": "Super Cool Framework",
-  "main": "index.js",
-  "author": "joe santos garcia",
-  "license": "MIT",
-  "homepage": "http://janniaui.codingphase.com/",
+  "description": "cool css framework",
+  "main": "gulpfile.js",
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
@@ -45,5 +42,15 @@
   },
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingphasedotcom/jannia-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingphasedotcom/jannia-ui/issues"
+  },
+  "homepage": "https://github.com/codingphasedotcom/jannia-ui#readme"
 }
